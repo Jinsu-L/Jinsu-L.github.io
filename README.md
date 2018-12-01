@@ -6,7 +6,7 @@ jinsu의 블로그 코드 입니다.
 
 ## Frok From 
 
-[Centrarium](https://circleci.com/gh/bencentra/centrarium/tree/master)
+[Centrarium](https://github.com/bencentra/centrarium)
 
 
 ## License
