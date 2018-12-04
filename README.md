@@ -4,6 +4,14 @@ jinsu의 블로그 코드 입니다.
 
 18년 내로 기본적은 블로그 형태 완성하기!!
 
+## 실행 방법
+
+```bash
+gem install bundler
+bundle install
+bundle exec jekyll serve
+```
+
 ## Frok From 
 
 [Centrarium](https://github.com/bencentra/centrarium)
