@@ -230,16 +230,16 @@
       version: '2.2.4',
       sources: {
         font_awesome: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
-        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        jquery: 'https://unpkg.com/jquery@3.3.1/dist/jquery.min.js',
         leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
-        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        chart: 'https://unpkg.com/chart.js@2.7.2/dist/Chart.min.js',
         gitalk: {
-          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
-          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+          js: 'https://unpkg.com/gitalk@1.2.2/dist/gitalk.min.js',
+          css: 'https://unpkg.com/gitalk@1.2.2/dist/gitalk.css'
         },
-        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
-        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
-        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+        valine: 'https//unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://unpkg.com/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js'
       },
       site: {
         toc: {
@@ -255,12 +255,9 @@
 </script></head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root">
-<div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
 
-      <div class="page__main-inner">
-<div class="page__header d-print-none">
-<header class="header"><div class="main">
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
         <div class="header__brand">
 <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -271,107 +268,63 @@
 <path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
 	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
 </svg>--><a title="My personal Blog
-" href="/home">J1N2U Blog</a>
-</div>
-<button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
-</div>
-<nav class="navigation">
-        <ul>
-<li class="navigation__item"><a href="/archive.html">아카이브</a></li>
-<li class="navigation__item"><a href="/about.html">소개</a></li>
-<li class="navigation__item"><a href="/docs/_docs/en/quick-start">dO</a></li>
-<li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
-</ul>
-      </nav>
-</div>
+" href="/home">J1N2U Blog</a></div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
+        <ul><li class="navigation__item navigation__item--active"><a href="/home">HOME</a></li><li class="navigation__item"><a href="/archive.html">ARCHIVES</a></li><li class="navigation__item"><a href="/about.html">ABOUT</a></li><li class="navigation__item"><a href="/tag_archive.html">TAGS</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
+      </nav></div>
   </header>
-</div>
-<div class="page__content"><div class="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
 
               <div class="col-aside d-print-none js-col-aside"></div>
 
-              <div class="col-main cell cell--auto">
-<!-- start custom main top snippet --><img class="article__header--cover" src="/assets/home_cover_slice.png"><!-- end custom main top snippet --><article><header style="display:none;"><h1>홈</h1></header><meta itemprop="headline" content="홈">
-<meta itemprop="author" content="jinsu lim">
-<div class="js-article-content">
-<div class="layout--articles">
-<div class="article-list items items--divided">
-<article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2018/07/01/welcome.html"><h2 itemprop="headline" class="item__header">Welcome</h2></a></header>
-          <div class="item__description">
-<div class="article__content" itemprop="description articleBody">If you see this page, that means you have setup your site. enjoy! <img class="emoji" title=":ghost:" alt=":ghost:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f47b.png" height="20" width="20"> <img class="emoji" title=":ghost:" alt=":ghost:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f47b.png" height="20" width="20"> <img class="emoji" title=":ghost:" alt=":ghost:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f47b.png" height="20" width="20">
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
-You may want to config the site or writing a post next. Please feel free to create an issue or send me email if you have any questions.</div>
-<p><a href="/2018/07/01/welcome.html">더보기</a></p>
-</div>
-<div class="article__info clearfix">
-<ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=TeXt">TeXt</a>
-            </li></ul>
-<ul class="right-col menu"><li>
-<i class="far fa-calendar-alt"></i> <span>2018년 07월 01일</span>
-            </li></ul>
-</div>
-<meta itemprop="author" content="jinsu lim">
-<meta itemprop="datePublished" content="2018-07-01T00:00:00+09:00">
-    <meta itemprop="keywords" content="TeXt">
-</div>
+
+<!-- end custom main top snippet --><article><header style="display:none;"><h1>홈</h1></header><meta itemprop="headline" content="홈"><meta itemprop="author" content="jinsu lim"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
+          <header><a href="/test2/2018/07/01/welcome.html"><h2 itemprop="headline" class="item__header">Welcome</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">TEST
+
+hell0
+jinsu</div><p><a href="/test2/2018/07/01/welcome.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/tag_archive.html?tag=Tet">Tet</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/tag_archive.html?tag=T">T</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2018년 07월 01일</span>
+            </li></ul></div><meta itemprop="author" content="jinsu lim"/><meta itemprop="datePublished" content="2018-07-01T00:00:00+09:00">
+    <meta itemprop="keywords" content="Tet,T"></div>
       </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__content">
-          <header><a href="/2018/06/01/header-image.html"><h2 itemprop="headline" class="item__header">Post with Header Image</h2></a></header>
-          <div class="item__description">
-<div class="article__content" itemprop="description articleBody">A Post with Header Image, See Page layout for more examples.</div>
-<p><a href="/2018/06/01/header-image.html">더보기</a></p>
-</div>
-<div class="article__info clearfix">
-<ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm" href="/archive.html?tag=TeXt">TeXt</a>
-            </li></ul>
-<ul class="right-col menu"><li>
-<i class="far fa-calendar-alt"></i> <span>2018년 06월 01일</span>
-            </li></ul>
-</div>
-<meta itemprop="author" content="jinsu lim">
-<meta itemprop="datePublished" content="2018-06-01T00:00:00+09:00">
-    <meta itemprop="keywords" content="TeXt">
-</div>
-      </article>
-</div>
-</div>
-<div class="layout--home"></div>
+          <header><a href="/test/2018/06/01/header-image.html"><h2 itemprop="headline" class="item__header">Post with Header Image</h2></a></header>
+          <div class="item__description"><div class="article__content" itemprop="description articleBody">A Post with Header Image</div><p><a href="/test/2018/06/01/header-image.html">더보기</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/tag_archive.html?tag=Tet">Tet</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>2018년 06월 01일</span>
+            </li></ul></div><meta itemprop="author" content="jinsu lim"/><meta itemprop="datePublished" content="2018-06-01T00:00:00+09:00">
+    <meta itemprop="keywords" content="Tet"></div>
+      </article></div>
+</div><div class="layout--home"></div>
 <script>/*(function () {
 
 })();*/
 </script>
 
-test</div>
-<section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
 
-<!-- end custom main bottom snippet -->
-</div>
-            </div></div></div>
-<div class="page__footer d-print-none">
+<!-- end custom main bottom snippet --></div>
+            </div></div></div><div class="page__footer d-print-none">
 <footer class="footer py-4 js-page-footer">
-  <div class="main">
-<div itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jinsu lim">
-<meta itemprop="url" content="/">
-<meta itemprop="description" content="I am an amazing person.">
-<div class="footer__author-links">
-<div class="author-links">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jinsu lim"><meta itemprop="url" content="/"><meta itemprop="description" content="I am an amazing person."><div class="footer__author-links"><div class="author-links">
   <ul class="menu menu--nowrap menu--inline"></ul>
 </div>
 </div>
-    </div>
-<div class="site-info mt-2">
+    </div><div class="site-info mt-2">
       <div>© J1N2U Blog 2019.
       </div>
     </div>
   </div>
-</footer>
-</div>
-</div>
-    </div>
-<script>(function() {
+</footer></div></div>
+    </div><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
     var $body = $('body'), $window = $(window);
@@ -435,8 +388,7 @@ test</div>
     $.fn.modal = modal;
   });
 })();
-</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal">
-<script>
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"><script>
 (function () {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
@@ -528,7 +480,7 @@ test</div>
     <div class="search-bar">
       <div class="search-box js-search-box">
         <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
-        <input type="text">
+        <input type="text" />
         <div class="search-box__icon-clear js-icon-clear">
           <a><i class="fas fa-times"></i></a>
         </div>
@@ -651,9 +603,7 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
     itemIndex >= 0 && (lastActiveIndex = activeIndex, activeIndex = itemIndex, updateResultItems());
   });
 });
-</script>
-</div>
-</div>
+</script></div></div>
 
 
 <script>(function() {
@@ -891,7 +841,7 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 
 })();*/
 </script><script>
-  window.Lazyload.js(['https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js', 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js'], function() {
+  window.Lazyload.js(['https://unpkg.com/jquery@3.3.1/dist/jquery.min.js', 'https://unpkg.com/chart.js@2.7.2/dist/Chart.min.js'], function() {
     var $canvas = null, $this = null, _ctx = null, _text = '';
     $('.language-chart').each(function(){
       $this = $(this);
@@ -907,8 +857,8 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 		inlineMath: [['$','$'], ['\\(','\\)']]
 	}};_config.TeX = { equationNumbers: { autoNumber: "all" } };MathJax.Hub.Config(_config);
 </script>
-<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script>
-  window.Lazyload.js('https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js', function() {
+<script type="text/javascript" src="https://unpkg.com/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script>
+  window.Lazyload.js('https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js', function() {
     mermaid.initialize({
       startOnLoad: true
     });

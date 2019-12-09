@@ -2,6 +2,12 @@
 
 {%- assign _excerpt_type = include.excerpt_type -%}
 
+{%- if include.show_tags == false -%}
+  {%- assign _show_tags = include.show_tags -%}
+{%- else -%}
+  {%- assign _show_tags = include.show_tags | default: site.data.variables.default.page.show_tags-%}
+{%- endif -%}
+
 {%- include snippets/get-locale-string.html key='READMORE' -%}
 {%- assign _locale_readmore = __return -%}
 
@@ -74,7 +80,7 @@
             {%- include snippets/assign.html target=site.data.variables.default.page.pageview
               source0=_article.pageview -%}
             {%- assign _show_pageview = __return -%}
-            {%- include article-info.html article=_article show_pageview=_show_pageview -%}
+            {%- include article-info.html article=_article show_pageview=_show_pageview show_tags=_show_tags -%}
           {%- endif -%}
         </div>
       </article>

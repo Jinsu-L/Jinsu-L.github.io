@@ -1,12 +1,13 @@
 ---
 title: Post with Header Image
-tags: TeXt
+tags: Tet
+category: Test
 article_header:
   type: cover
   image:
-    src: /screenshot.jpg
+    src: /assets/my_header.jpg
 ---
 
-A Post with Header Image, See [Page layout](https://tianqi.name/jekyll-TeXt-theme/samples.html#page-layout) for more examples.
+A Post with Header Image
 
 <!--more-->

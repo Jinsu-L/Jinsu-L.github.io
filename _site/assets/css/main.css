@@ -2179,13 +2179,13 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .site-tags .tag-button-1 svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.site-tags .tag-button-1, .site-tags .tag-button-1:link, .site-tags .tag-button-1:visited { color: #fff; background-color: rgba(252, 77, 80, 0.4); }
+.site-tags .tag-button-1, .site-tags .tag-button-1:link, .site-tags .tag-button-1:visited { color: #333; background-color: rgba(242, 242, 242, 0.4); }
 
-.site-tags .tag-button-1 svg path, .site-tags .tag-button-1:link svg path, .site-tags .tag-button-1:visited svg path { fill: #fff; }
+.site-tags .tag-button-1 svg path, .site-tags .tag-button-1:link svg path, .site-tags .tag-button-1:visited svg path { fill: #333; }
 
-.root[data-is-touch="false"] .site-tags .tag-button-1:hover { color: #fff; background-color: rgba(251, 7, 11, 0.4); }
+.root[data-is-touch="false"] .site-tags .tag-button-1:hover { color: #333; background-color: rgba(206, 206, 206, 0.4); }
 
-.root[data-is-touch="false"] .site-tags .tag-button-1:hover svg path { fill: #fff; }
+.root[data-is-touch="false"] .site-tags .tag-button-1:hover svg path { fill: #333; }
 
 .root[data-is-touch] .site-tags .tag-button-1.active, .root[data-is-touch] .site-tags .tag-button-1:active { color: #fff; background-color: #fca24d; }
 
@@ -2195,21 +2195,21 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch] .site-tags .tag-button-1.focus svg path { fill: #fff; }
 
-.site-tags .tag-button-1.disabled, .site-tags .tag-button-1:disabled { color: rgba(255, 255, 255, 0.2) !important; background-color: rgba(252, 77, 80, 0.4) !important; }
+.site-tags .tag-button-1.disabled, .site-tags .tag-button-1:disabled { color: rgba(51, 51, 51, 0.2) !important; background-color: rgba(242, 242, 242, 0.4) !important; }
 
-.site-tags .tag-button-1.disabled svg path, .site-tags .tag-button-1:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
+.site-tags .tag-button-1.disabled svg path, .site-tags .tag-button-1:disabled svg path { fill: rgba(51, 51, 51, 0.2) !important; }
 
 .site-tags .tag-button-2 { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .site-tags .tag-button-2 svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.site-tags .tag-button-2, .site-tags .tag-button-2:link, .site-tags .tag-button-2:visited { color: #fff; background-color: rgba(252, 77, 80, 0.55); }
+.site-tags .tag-button-2, .site-tags .tag-button-2:link, .site-tags .tag-button-2:visited { color: #333; background-color: rgba(242, 242, 242, 0.55); }
 
-.site-tags .tag-button-2 svg path, .site-tags .tag-button-2:link svg path, .site-tags .tag-button-2:visited svg path { fill: #fff; }
+.site-tags .tag-button-2 svg path, .site-tags .tag-button-2:link svg path, .site-tags .tag-button-2:visited svg path { fill: #333; }
 
-.root[data-is-touch="false"] .site-tags .tag-button-2:hover { color: #fff; background-color: rgba(251, 7, 11, 0.55); }
+.root[data-is-touch="false"] .site-tags .tag-button-2:hover { color: #333; background-color: rgba(206, 206, 206, 0.55); }
 
-.root[data-is-touch="false"] .site-tags .tag-button-2:hover svg path { fill: #fff; }
+.root[data-is-touch="false"] .site-tags .tag-button-2:hover svg path { fill: #333; }
 
 .root[data-is-touch] .site-tags .tag-button-2.active, .root[data-is-touch] .site-tags .tag-button-2:active { color: #fff; background-color: #fca24d; }
 
@@ -2219,21 +2219,21 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch] .site-tags .tag-button-2.focus svg path { fill: #fff; }
 
-.site-tags .tag-button-2.disabled, .site-tags .tag-button-2:disabled { color: rgba(255, 255, 255, 0.2) !important; background-color: rgba(252, 77, 80, 0.55) !important; }
+.site-tags .tag-button-2.disabled, .site-tags .tag-button-2:disabled { color: rgba(51, 51, 51, 0.2) !important; background-color: rgba(242, 242, 242, 0.55) !important; }
 
-.site-tags .tag-button-2.disabled svg path, .site-tags .tag-button-2:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
+.site-tags .tag-button-2.disabled svg path, .site-tags .tag-button-2:disabled svg path { fill: rgba(51, 51, 51, 0.2) !important; }
 
 .site-tags .tag-button-3 { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .site-tags .tag-button-3 svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.site-tags .tag-button-3, .site-tags .tag-button-3:link, .site-tags .tag-button-3:visited { color: #fff; background-color: rgba(252, 77, 80, 0.7); }
+.site-tags .tag-button-3, .site-tags .tag-button-3:link, .site-tags .tag-button-3:visited { color: #333; background-color: rgba(242, 242, 242, 0.7); }
 
-.site-tags .tag-button-3 svg path, .site-tags .tag-button-3:link svg path, .site-tags .tag-button-3:visited svg path { fill: #fff; }
+.site-tags .tag-button-3 svg path, .site-tags .tag-button-3:link svg path, .site-tags .tag-button-3:visited svg path { fill: #333; }
 
-.root[data-is-touch="false"] .site-tags .tag-button-3:hover { color: #fff; background-color: rgba(251, 7, 11, 0.7); }
+.root[data-is-touch="false"] .site-tags .tag-button-3:hover { color: #333; background-color: rgba(206, 206, 206, 0.7); }
 
-.root[data-is-touch="false"] .site-tags .tag-button-3:hover svg path { fill: #fff; }
+.root[data-is-touch="false"] .site-tags .tag-button-3:hover svg path { fill: #333; }
 
 .root[data-is-touch] .site-tags .tag-button-3.active, .root[data-is-touch] .site-tags .tag-button-3:active { color: #fff; background-color: #fca24d; }
 
@@ -2243,21 +2243,21 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch] .site-tags .tag-button-3.focus svg path { fill: #fff; }
 
-.site-tags .tag-button-3.disabled, .site-tags .tag-button-3:disabled { color: rgba(255, 255, 255, 0.2) !important; background-color: rgba(252, 77, 80, 0.7) !important; }
+.site-tags .tag-button-3.disabled, .site-tags .tag-button-3:disabled { color: rgba(51, 51, 51, 0.2) !important; background-color: rgba(242, 242, 242, 0.7) !important; }
 
-.site-tags .tag-button-3.disabled svg path, .site-tags .tag-button-3:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
+.site-tags .tag-button-3.disabled svg path, .site-tags .tag-button-3:disabled svg path { fill: rgba(51, 51, 51, 0.2) !important; }
 
 .site-tags .tag-button-4 { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 .site-tags .tag-button-4 svg path { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-.site-tags .tag-button-4, .site-tags .tag-button-4:link, .site-tags .tag-button-4:visited { color: #fff; background-color: rgba(252, 77, 80, 0.9); }
+.site-tags .tag-button-4, .site-tags .tag-button-4:link, .site-tags .tag-button-4:visited { color: #333; background-color: rgba(242, 242, 242, 0.9); }
 
-.site-tags .tag-button-4 svg path, .site-tags .tag-button-4:link svg path, .site-tags .tag-button-4:visited svg path { fill: #fff; }
+.site-tags .tag-button-4 svg path, .site-tags .tag-button-4:link svg path, .site-tags .tag-button-4:visited svg path { fill: #333; }
 
-.root[data-is-touch="false"] .site-tags .tag-button-4:hover { color: #fff; background-color: rgba(251, 7, 11, 0.9); }
+.root[data-is-touch="false"] .site-tags .tag-button-4:hover { color: #333; background-color: rgba(206, 206, 206, 0.9); }
 
-.root[data-is-touch="false"] .site-tags .tag-button-4:hover svg path { fill: #fff; }
+.root[data-is-touch="false"] .site-tags .tag-button-4:hover svg path { fill: #333; }
 
 .root[data-is-touch] .site-tags .tag-button-4.active, .root[data-is-touch] .site-tags .tag-button-4:active { color: #fff; background-color: #fca24d; }
 
@@ -2267,9 +2267,9 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .root[data-is-touch] .site-tags .tag-button-4.focus svg path { fill: #fff; }
 
-.site-tags .tag-button-4.disabled, .site-tags .tag-button-4:disabled { color: rgba(255, 255, 255, 0.2) !important; background-color: rgba(252, 77, 80, 0.9) !important; }
+.site-tags .tag-button-4.disabled, .site-tags .tag-button-4:disabled { color: rgba(51, 51, 51, 0.2) !important; background-color: rgba(242, 242, 242, 0.9) !important; }
 
-.site-tags .tag-button-4.disabled svg path, .site-tags .tag-button-4:disabled svg path { fill: rgba(255, 255, 255, 0.2) !important; }
+.site-tags .tag-button-4.disabled svg path, .site-tags .tag-button-4:disabled svg path { fill: rgba(51, 51, 51, 0.2) !important; }
 
 .search { overflow: auto; -webkit-overflow-scrolling: touch; }
 
