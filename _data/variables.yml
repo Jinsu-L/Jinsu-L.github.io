@@ -13,7 +13,6 @@ default:
   chart: true
   toc:
     selectors: 'h1,h2,h3'
-  sources: bootcdn
 
   page:
     mode: normal
@@ -30,10 +29,10 @@ default:
     show_edit_on_github: false
     show_date: true
     show_tags: true
-    show_author_profile: false
-    show_subscribe: false
+    show_author_profile: true
+    show_subscribe: true
     full_width: false
-    sharing: false
+    sharing: true
     comment: true
     license: false
     pageview: false
