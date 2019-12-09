@@ -16,6 +16,8 @@ default:
 
   page:
     mode: normal
+    header:
+      theme: dark
     type: webpage
     article_header:
       align: left

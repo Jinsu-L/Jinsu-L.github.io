@@ -1,6 +1,9 @@
 ---
 layout: article
 title: About
+header:
+  theme: dark
+
 key: page-about
 show_author_profile: false
 ---
