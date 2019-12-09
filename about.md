@@ -2,7 +2,7 @@
 layout: article
 title: About
 key: page-about
-
+show_author_profile: false
 ---
 
 **- Explicit is better than implicit.** 
