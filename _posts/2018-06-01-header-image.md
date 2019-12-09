@@ -2,6 +2,7 @@
 title: Post with Header Image
 tags: Tet
 category: Test
+mode: immersive
 article_header:
   type: cover
   image:
