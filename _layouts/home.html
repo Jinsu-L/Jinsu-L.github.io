@@ -1,8 +1,6 @@
 ---
 layout: articles
 type: home
-title: <center>J1N2U Tech Blog</center><center><h5>Explicit is better than implicit.</h5></center>
-
 header:
   theme: dark
 
@@ -16,11 +14,11 @@ articles:
 
 ---
 
+{{ content }}
+
 <div class="layout--home">
   {%- include paginator.html -%}
 </div>
 <script>
   {%- include scripts/home.js -%}
 </script>
-
-{{ content }}

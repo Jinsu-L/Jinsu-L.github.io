@@ -1,15 +1,22 @@
 ---
 layout: archive
+title : Archive
 header:
     theme: dark
-
+mode: immersive
+article_header:
+    type: overlay
+    theme: dark
+    height : 50%
+    align: center
+    background_image:
+        gradient: 'linear-gradient(135deg, rgba(0, 0, 0 , .6), rgba(0, 0, 0, .6))'
+        src: /assets/arhive_image.jpg
 ---
 
-<h3> CATEGORY </h3>
 <div class="layout--archive js-all">
-    {%- include category.html -%}
     <div class="js-result layout--archive__result d-none">
-        {%- include article-list.html articles=site.categories.Test type='item' show_tags=false show_info=true show_cover=false show_readmore=true show_excerpt=true reverse=true group_by='year' -%}
+        {%- include article-list.html articles=site.posts type='brief' show_tags=false show_info=true show_cover=false show_readmore=true show_excerpt=true reverse=true group_by='year' -%}
     </div>
 </div>
 
