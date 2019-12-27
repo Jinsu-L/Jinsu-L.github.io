@@ -15,7 +15,7 @@ key: 20191224_AttendAndRectify
 
 ## 요약
 
-<img src="../assets/post_images/image-20191227184527533.png" alt="image-20191227184527533" style="zoom:50%;" />
+<img src="/assets/post_images/image-20191227184527533.png" alt="image-20191227184527533" style="zoom:50%;" />
 
 기존 CNN 구조에 Attention을 도입하여서 fine-grained recognition을 실현하는 방법에 대한 논문.
 
@@ -34,7 +34,7 @@ CNN의 각 단계별로 Attention을 도입을 하여, 예축 class에 대한 co
 
 ## 방법
 
-<img src="../assets/post_images/image-20191227185604770.png" alt="image-20191227185604770" style="zoom:50%;" />
+<img src="/assets/post_images/image-20191227185604770.png" alt="image-20191227185604770" style="zoom:50%;" />
 
 논문에서 attention 모듈은 3가지의 서브 모듈로 이루어져 있음
 
@@ -119,7 +119,7 @@ N개의 각 단계에서 얻은 hypothesis와 최종 output에 대하여 Global 
 
 Ablation experiment를 해서, AD,AW등 하이퍼파라미터를 결정
 
-<img src="../assets/post_images/image-20191227200739377.png" alt="image-20191227200739377" style="zoom:50%;" />
+<img src="/assets/post_images/image-20191227200739377.png" alt="image-20191227200739377" style="zoom:50%;" />
 
 
 
@@ -127,9 +127,9 @@ Ablation experiment를 해서, AD,AW등 하이퍼파라미터를 결정
 
 Wide-ResNet을 Baseline으로 사용하여 실험
 
-<img src="../assets/post_images/image-20191227195900837.png" alt="image-20191227195900837" style="zoom:50%;" />
+<img src="/assets/post_images/image-20191227195900837.png" alt="image-20191227195900837" style="zoom:50%;" />
 
-<img src="../assets/post_images/image-20191227195936568.png" alt="image-20191227195936568" style="zoom:50%;" />
+<img src="/assets/post_images/image-20191227195936568.png" alt="image-20191227195936568" style="zoom:50%;" />
 
 
 
