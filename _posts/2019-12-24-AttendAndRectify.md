@@ -109,7 +109,7 @@ output head로 부터 생성된 k개의 output head의 probabilty vector에 대�
 
 N개의 각 단계에서 얻은 hypothesis와 최종 output에 대하여 Global attention gates에서 얻은 신뢰도를 이용하여 최종 hypothesis를 생성한다.
 
-​		$$output = g_{net} · output_{net} + \sum_{ l∈\{1..|O|\}} g^l_O · o^l ,$$
+​		$$output = g_{net} · output_{net} + \sum_{ l∈\{1..\|O\|\}} g^l_O · o^l ,$$
 
 <br>
 
