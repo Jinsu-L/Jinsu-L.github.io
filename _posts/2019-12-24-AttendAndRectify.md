@@ -1,5 +1,5 @@
 ---
-title: Attend and Rectify - a Gated Attention Mechanism for Fine-Grained Recovery
+Attention augmented convolutional networkstitle: Attend and Rectify - a Gated Attention Mechanism for Fine-Grained Recovery
 tags: MachineLearning DeepLearning XAI Attention 논문정리
 header:
     theme: default
@@ -84,7 +84,7 @@ output head로 부터 생성된 k개의 output head의 probabilty vector에 대�
 
 ​		$$\sum_k g_{\mathcal{H}^l_k} = 1$$, 을 만족하도록 softmax를 취하여 각 output head의 hypothesis를 합친 $$ o^{l}$$의 값이 커지지 않도록 함
 
-1. conv를 $$|\mathcal{H}|$$개 만큼 후 
+1. conv를 $$\|\mathcal{H}\|$$개 만큼 후 
 2. attention head의 결과와 합친 후
 3. avg pool을 해줌
 4. tanh를 한번 해준 뒤 softmax를 취해서 sum이 1이 될 수 있도록 함
@@ -109,7 +109,7 @@ output head로 부터 생성된 k개의 output head의 probabilty vector에 대�
 
 N개의 각 단계에서 얻은 hypothesis와 최종 output에 대하여 Global attention gates에서 얻은 신뢰도를 이용하여 최종 hypothesis를 생성한다.
 
-​		$$output = g_{net} · output_{net} + \sum_{ l∈\{1..|O|\}} g^l_O · o^l ,$$
+​		$$output = g_{net} · output_{net} + \sum_{ l∈\{1..\|O\|\}} g^l_O · o^l ,$$
 
 <br>
 
