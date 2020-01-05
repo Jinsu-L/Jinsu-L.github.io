@@ -61,7 +61,7 @@ RNN에서처럼 하나하나 token을 받아서 처리하는 방식이 아닌 �
 
 <center><img src="/assets/post_images/image-20191227212733898.png" alt="image-20191227212733898" style="zoom:50%;" /></center>
 
-AACN은 MHA을 기존 convolution 연산과 같이 진행하여서 결과를 concat하는 방식으로 구현이 되어 있음 .
+AACN은 MHA과 기존 convolution 연산과 같이 진행하여서 결과를 concat하는 방식으로 구현이 되어 있음 .
 
 <br>
 
