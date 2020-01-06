@@ -1,5 +1,5 @@
 ---
-Attention augmented convolutional networkstitle: Attend and Rectify - a Gated Attention Mechanism for Fine-Grained Recovery
+title: Attend and Rectify - a Gated Attention Mechanism for Fine-Grained Recovery
 tags: MachineLearning DeepLearning XAI Attention 논문정리
 header:
     theme: default
