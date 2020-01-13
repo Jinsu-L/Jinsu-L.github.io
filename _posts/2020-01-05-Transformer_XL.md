@@ -72,8 +72,7 @@ fixed-length context 문제를 해결하기 위해서 Transformer 구조에 **Re
 
 
 $$
-S_\tau = [x_{\tau,1,}...,x_{\tau,L}],\ S_{\tau+1} = [x_{\tau+1,1,}...,x_{\tau+1,L}]
-\notag
+S_\tau = [x_{\tau,1,}...,x_{\tau,L}],\ S_{\tau+1} = [x_{\tau+1,1,}...,x_{\tau+1,L}] \notag
 $$
 
 $$
@@ -113,8 +112,7 @@ positional encoding을 recurrence 모델에 적용하면 아래와 같아짐
 
 
 $$
-h_{τ+1}=f(h_τ,E_{s_{τ+1}}+U_{1:L}) \\ h_τ=f(h_{τ−1},E_{s_τ}+U_{1:L})
-\notag
+h_{τ+1}=f(h_τ,E_{s_{τ+1}}+U_{1:L}) \\ h_τ=f(h_{τ−1},E_{s_τ}+U_{1:L}) \notag
 $$
 
 
@@ -182,17 +180,16 @@ $$
 <br>
 
 최종적인 Transformer-XL architecture.
-$$ {align}
+$$
 \bar{h}^{n-1}_\tau = [SG(m_{\tau}^{n-1} \circ h^{n-1}_\tau)] \\
 q^n_\tau,k^n_\tau,v^n_\tau = h^{n-1}_\tau {W^n_q}^\top, \bar{h}^{n-1}_\tau {W^n_{k,E}}^\top, \bar{h}^{n-1}_\tau {W ^n_v}^\top \\
-A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j}
+A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j} \notag
 $$
 <br>
 $$
 \mathbb{a}^n_\tau = Masked-Softmax(A^n_\tau)\mathbb{v}^n_\tau \\
 \mathbb{o}^n_\tau = LayerNorm(Linear(\mathbb{a}^b_\tau) + h^{n-1}_\tau) \\
-h^n_\tau = Positionwise-Feed-Forward(\mathbb{o}^n_\tau)
-\notag
+h^n_\tau = Positionwise-Feed-Forward(\mathbb{o}^n_\tau) \notag
 $$
 
 
