@@ -182,11 +182,10 @@ $$
 <br>
 
 최종적인 Transformer-XL architecture.
-$$
+$$ {align}
 \bar{h}^{n-1}_\tau = [SG(m_{\tau}^{n-1} \circ h^{n-1}_\tau)] \\
 q^n_\tau,k^n_\tau,v^n_\tau = h^{n-1}_\tau {W^n_q}^\top, \bar{h}^{n-1}_\tau {W^n_{k,E}}^\top, \bar{h}^{n-1}_\tau {W ^n_v}^\top \\
 A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j}
-\notag
 $$
 <br>
 $$
