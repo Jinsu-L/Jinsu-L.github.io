@@ -73,12 +73,14 @@ fixed-length context 문제를 해결하기 위해서 Transformer 구조에 **Re
 
 $$
 S_\tau = [x_{\tau,1,}...,x_{\tau,L}],\ S_{\tau+1} = [x_{\tau+1,1,}...,x_{\tau+1,L}]
+\label{}
 $$
 
 $$
 \bar{h}^{n-1}_{\tau+1} = [SG(h^{n-1}_\tau) \circ h^{n-1}_{\tau+1}], \\
 q^{n}_{\tau+1}, k^{n}_{\tau+1}, v^{n}_{\tau+1} = h^{n-1}_{\tau+1}W^{\top}_q, \bar{h}^{n-1}_{\tau+1}W^{\top}_k, \bar{h}^{n-1}_{\tau+1}W^{\top}_v, \\
 h^{n}_{\tau+1} = Transformer-Layer(q^n_{\tau+1}, k^n_{\tau+1}, v^n_{\tau+1})
+\label{}
 $$
 
 
@@ -112,6 +114,7 @@ positional encoding을 recurrence 모델에 적용하면 아래와 같아짐
 
 $$
 h_{τ+1}=f(h_τ,E_{s_{τ+1}}+U_{1:L}) \\ h_τ=f(h_{τ−1},E_{s_τ}+U_{1:L})
+\label{}
 $$
 
 
@@ -125,7 +128,6 @@ $$E_{s_\tau}$$는 sequence $$s_\tau$$의 word embedding.
 
 
 $$
-\begin{equation}
 \begin{aligned}
 \textbf{A}_{ij}^{abs} ={}
 \underbrace{\textbf{E}_{x_i}^{\top} \textbf{W}_q^{\top} \textbf{W}_k \textbf{E}_{x_j}}_{(a)}
@@ -134,7 +136,6 @@ $$
 + \underbrace{\textbf{U}_{i}^{\top} \textbf{W}_q^{\top} \textbf{W}_k \textbf{U}_{j}}_{(d)}
 \end{aligned}
 \label{}
-\end{equation}
 $$
 
 
@@ -142,14 +143,13 @@ $$
 
 
 $$
-\begin{equation}
 \begin{aligned}
 \textbf{A}_{ij}^{rel} ={}\underbrace{\textbf{E}_{x_i}^{\top} \textbf{W}_q^{\top} \textbf{W}_{k,E} \textbf{E}_{x_j}}_{(a)}
-+ \underbrace{\textbf{E}_{x_i}^{\top} \textbf{W}_q^{\top} \textbf{W}_{k,R} \textcolor{blue}{\textbf{R}_{i-j}}}_{(b)}
-+ \underbrace{\textcolor{red}{u^{\top}} \textbf{W}_{k,E} \textbf{E}_{x_j}}_{(c)}
-+ \underbrace{\textcolor{red}{v^{\top}} \textbf{W}_{k,R} \textcolor{blue}{\textbf{R}_{i-j}}}_{(d)}
++\ \underbrace{\textbf{E}_{x_i}^{\top} \textbf{W}_q^{\top} \textbf{W}_{k,R} \color{blue}{\textbf{R}_{i-j}}}_{(b)} \\
++\ \underbrace{\color{red}{u^{\top}} \textbf{W}_{k,E} \textbf{E}_{x_j}}_{(c)}
++\ \underbrace{\color{red}{v^{\top}} \textbf{W}_{k,R} \color{blue}{\textbf{R}_{i-j}}}_{(d)}
 \end{aligned}
-\end{equation}
+\label{}
 $$
 
 * term (b), (d)에 있던 absolute positional embedding $$U_j$$를 relative counterpart $$\textcolor{blue}{R_{i-j}}
@@ -185,12 +185,17 @@ $$
 $$
 \bar{h}^{n-1}_\tau = [SG(m_{\tau}^{n-1} \circ h^{n-1}_\tau)] \\
 q^n_\tau,k^n_\tau,v^n_\tau = h^{n-1}_\tau {W^n_q}^\top, \bar{h}^{n-1}_\tau {W^n_{k, E}}^\top, \bar{h}^{n-1}_\tau {W ^n_v}^\top \\
-A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j} \\
-\begin{align*}
+A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j}
+\label{}
+$$
+
+$$
+\begin{aligned}
 \mathbb{a}^n_\tau &= Masked-Softmax(A^n_\tau)\mathbb{v}^n_\tau \\
 \mathbb{o}^n_\tau &= LayerNorm(Linear(\mathbb{a}^b_\tau) + h^{n-1}_\tau) \\
 h^n_\tau &= Positionwise-Feed-Forward(\mathbb{o}^n_\tau)
-\end{align*}
+\end{aligned}
+\label{}
 $$
 이전 segment와 concat한  결과를 이용해 $$q,k,v$$ 를 만들고 attention score를 만들어냄.
 
@@ -223,4 +228,3 @@ $$
 ### Evaluation Speed
 
 <center><img src="/assets/post_images/image-20200113230334546.png" alt="image-20200113230334546" style="zoom:50%;" /></center>
-
