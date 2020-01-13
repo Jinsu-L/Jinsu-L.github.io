@@ -73,14 +73,14 @@ fixed-length context 문제를 해결하기 위해서 Transformer 구조에 **Re
 
 $$
 S_\tau = [x_{\tau,1,}...,x_{\tau,L}],\ S_{\tau+1} = [x_{\tau+1,1,}...,x_{\tau+1,L}]
-\label{}
+\notag
 $$
 
 $$
 \bar{h}^{n-1}_{\tau+1} = [SG(h^{n-1}_\tau) \circ h^{n-1}_{\tau+1}], \\
 q^{n}_{\tau+1}, k^{n}_{\tau+1}, v^{n}_{\tau+1} = h^{n-1}_{\tau+1}W^{\top}_q, \bar{h}^{n-1}_{\tau+1}W^{\top}_k, \bar{h}^{n-1}_{\tau+1}W^{\top}_v, \\
 h^{n}_{\tau+1} = Transformer-Layer(q^n_{\tau+1}, k^n_{\tau+1}, v^n_{\tau+1})
-\label{}
+\notag
 $$
 
 
@@ -114,7 +114,7 @@ positional encoding을 recurrence 모델에 적용하면 아래와 같아짐
 
 $$
 h_{τ+1}=f(h_τ,E_{s_{τ+1}}+U_{1:L}) \\ h_τ=f(h_{τ−1},E_{s_τ}+U_{1:L})
-\label{}
+\notag
 $$
 
 
@@ -135,7 +135,7 @@ $$
 + \underbrace{\textbf{U}_{i}^{\top} \textbf{W}_q^{\top} \textbf{W}_k \textbf{E}_{x_j}}_{(c)}
 + \underbrace{\textbf{U}_{i}^{\top} \textbf{W}_q^{\top} \textbf{W}_k \textbf{U}_{j}}_{(d)}
 \end{aligned}
-\label{}
+\notag
 $$
 
 
@@ -149,13 +149,13 @@ $$
 +\ \underbrace{\color{red}{u^{\top}} \textbf{W}_{k,E} \textbf{E}_{x_j}}_{(c)}
 +\ \underbrace{\color{red}{v^{\top}} \textbf{W}_{k,R} \color{blue}{\textbf{R}_{i-j}}}_{(d)}
 \end{aligned}
-\label{}
+\notag
 $$
 
 * term (b), (d)에 있던 absolute positional embedding $$U_j$$를 relative counterpart $$\textcolor{blue}{R_{i-j}}
   $$로 변경
   * R은 기존 Transformer 에서 사용하던, sinusoid encoding matrix를 사용
-* 학습가능한 파라미터인 $$\textcolor{red}{u} \in \mathbb{R}^d$$, $$\textcolor{red}{v} \in \mathbb{R}^d$$ 를 도입
+* 학습가능한 파라미터인 $$\color{red}{u} \in \mathbb{R}^d$$, $$\color{red}{v} \in \mathbb{R}^d$$ 를 도입
   * $$q_i$$ 를 기준으로 $$k_j $$ 와의 관계를 찾는 것에서 모든 쿼리 위치에 대하여 동일하므로, 다른 위치에서도 같은 attentive bias를 가지고 위하여 도입
 * $$W_{k,E}, W_{k,R}$$ context-based key vector와 location-based key 벡터를 생성하기 위해서 파라미터를 분리
 
@@ -186,17 +186,19 @@ $$
 \bar{h}^{n-1}_\tau = [SG(m_{\tau}^{n-1} \circ h^{n-1}_\tau)] \\
 q^n_\tau,k^n_\tau,v^n_\tau = h^{n-1}_\tau {W^n_q}^\top, \bar{h}^{n-1}_\tau {W^n_{k, E}}^\top, \bar{h}^{n-1}_\tau {W ^n_v}^\top \\
 A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j}
-\label{}
+\notag
 $$
 
 $$
-\begin{aligned}
+\begin{align}
 \mathbb{a}^n_\tau &= Masked-Softmax(A^n_\tau)\mathbb{v}^n_\tau \\
 \mathbb{o}^n_\tau &= LayerNorm(Linear(\mathbb{a}^b_\tau) + h^{n-1}_\tau) \\
 h^n_\tau &= Positionwise-Feed-Forward(\mathbb{o}^n_\tau)
-\end{aligned}
-\label{}
+\end{align}
+\notag
 $$
+
+
 이전 segment와 concat한  결과를 이용해 $$q,k,v$$ 를 만들고 attention score를 만들어냄.
 
 첫번째, Segment는 초기 입력으로 $$h^0_\tau := E_{s_\tau}$$,  word_embedding이 c초기값을 들어감.
