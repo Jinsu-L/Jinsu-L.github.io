@@ -152,7 +152,7 @@ $$
 \notag
 $$
 
-* term (b), (d)에 있던 absolute positional embedding $$U_j$$를 relative counterpart $$\textcolor{blue}{R_{i-j}}
+* term (b), (d)에 있던 absolute positional embedding $$U_j$$를 relative counterpart $$\color{blue}{R_{i-j}}
   $$로 변경
   * R은 기존 Transformer 에서 사용하던, sinusoid encoding matrix를 사용
 * 학습가능한 파라미터인 $$\color{red}{u} \in \mathbb{R}^d$$, $$\color{red}{v} \in \mathbb{R}^d$$ 를 도입
@@ -184,17 +184,15 @@ $$
 최종적인 Transformer-XL architecture.
 $$
 \bar{h}^{n-1}_\tau = [SG(m_{\tau}^{n-1} \circ h^{n-1}_\tau)] \\
-q^n_\tau,k^n_\tau,v^n_\tau = h^{n-1}_\tau {W^n_q}^\top, \bar{h}^{n-1}_\tau {W^n_{k, E}}^\top, \bar{h}^{n-1}_\tau {W ^n_v}^\top \\
+q^n_\tau,k^n_\tau,v^n_\tau = h^{n-1}_\tau {W^n_q}^\top, \bar{h}^{n-1}_\tau {W^n_{k,E}}^\top, \bar{h}^{n-1}_\tau {W ^n_v}^\top \\
 A^{n}_{\tau, i,j} = {q^n_{\tau, i}}^\top k^n_{\tau,j} + {q^n_{\tau,i}}^\top W^n_{k, R}R_{i-j} + {u}^\top k_{\tau,j} + v^\top W^n_{k, R}R_{i-j}
 \notag
 $$
 
 $$
-\begin{align}
-\mathbb{a}^n_\tau &= Masked-Softmax(A^n_\tau)\mathbb{v}^n_\tau \\
-\mathbb{o}^n_\tau &= LayerNorm(Linear(\mathbb{a}^b_\tau) + h^{n-1}_\tau) \\
-h^n_\tau &= Positionwise-Feed-Forward(\mathbb{o}^n_\tau)
-\end{align}
+\mathbb{a}^n_\tau = Masked-Softmax(A^n_\tau)\mathbb{v}^n_\tau \\
+\mathbb{o}^n_\tau = LayerNorm(Linear(\mathbb{a}^b_\tau) + h^{n-1}_\tau) \\
+h^n_\tau = Positionwise-Feed-Forward(\mathbb{o}^n_\tau)
 \notag
 $$
 
