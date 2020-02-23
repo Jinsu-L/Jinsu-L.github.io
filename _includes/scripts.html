@@ -2,6 +2,22 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  new Vue({
+    el : '#category_menu',
+    data : {
+      flag_c : false
+    },
+    methods : {
+      toggle: function(){
+        this.flag_c = !this.flag_c;
+      }
+    }
+  });
+
+</script>
+
 <script type="text/x-mathjax-config">
    MathJax.Hub.Config({
      extensions: ["tex2jax.js"],
