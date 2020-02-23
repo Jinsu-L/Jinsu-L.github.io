@@ -38,7 +38,7 @@ Transformer-xl는 이러한 문제를 해결하기 위해서 **Segment Recurrenc
 
 ### Vanilla Transformer Language Models
 
-<center><img src="/assets/js/post_images/image-20200112224136138.png" alt="image-20200112224136138" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200112224136138.png" alt="image-20200112224136138" style="zoom:50%;" /></center>
 
 Transformer 또는 self-attention을 LM(Lauguage Model)에 적용하기 위한 핵심은 어떻게 임의의 긴 context를 고정된 길의의 representation으로 학습하는 것임.
 
@@ -58,7 +58,7 @@ Vanilla Transformer 는 고정된 길이의 Segments 단위로 나누어져, 사
 
 ### Segment-Level Recurrence with State Reuse
 
-<center><img src="/assets/js/post_images/image-20191228160101635.png" alt="image-20191228160101635" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20191228160101635.png" alt="image-20191228160101635" style="zoom:50%;" /></center>
 
 fixed-length context 문제를 해결하기 위해서 Transformer 구조에 **Recurrence Mechanism**을 사용함(**Segment Recurrence**). 
 
@@ -209,24 +209,24 @@ $$
 
 ### Main Results
 
-<center><img src="/assets/js/post_images/image-20200113225611900.png" alt="image-20200113225611900" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200113225611900.png" alt="image-20200113225611900" style="zoom:50%;" /></center>
 
 ### Ablation Study
 
-<center><img src="/assets/js/post_images/image-20200113225739087.png" alt="image-20200113225739087" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200113225739087.png" alt="image-20200113225739087" style="zoom:50%;" /></center>
 
-<center><img src="/assets/js/post_images/image-20200113225816286.png" alt="image-20200113225816286" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200113225816286.png" alt="image-20200113225816286" style="zoom:50%;" /></center>
 
 ### Relative Effective Context Length
 
-<center><img src="/assets/js/post_images/image-20200113225901315.png" alt="image-20200113225901315" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200113225901315.png" alt="image-20200113225901315" style="zoom:50%;" /></center>
 
 * Relative Effective Context Length (RECL)를 제안, 기존  Effective Context Length(ECL)의 문제점을 개선
 
 ### Generated Text
 
-<center><img src="/assets/js/post_images/image-20200113230156593.png" alt="image-20200113230156593" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200113230156593.png" alt="image-20200113230156593" style="zoom:50%;" /></center>
 
 ### Evaluation Speed
 
-<center><img src="/assets/js/post_images/image-20200113230334546.png" alt="image-20200113230334546" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200113230334546.png" alt="image-20200113230334546" style="zoom:50%;" /></center>

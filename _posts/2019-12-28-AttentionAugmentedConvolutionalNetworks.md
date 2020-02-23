@@ -5,6 +5,7 @@ header:
     theme: default
 category: MachineLearing
 key: 20191228_Attention_Augmented_Convolutional_Networks
+comments : true
 ---
 
 **Paper link : https://arxiv.org/pdf/1904.09925.pdf, iccv 2019**
@@ -17,7 +18,7 @@ key: 20191228_Attention_Augmented_Convolutional_Networks
 * convolutional layer와 self-attention을 결합한 새로운 방법을 제안하여 resnet에서 더 작은 파라미터로 top class에 대한 classification에서 이기는 결과를 얻음
 * Transformer의 self-attention 구조를 비전 태스크에 맞도록 사용함
 
-<center><img src="/assets/js/post_images/image-20191227212636847.png" alt="image-20191227212636847" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20191227212636847.png" alt="image-20191227212636847" style="zoom:50%;" /></center>
 
 
 
@@ -53,13 +54,13 @@ RNN에서처럼 하나하나 token을 받아서 처리하는 방식이 아닌 �
 
 <br>
 
-<center><img src="/assets/js/post_images/image-20191227211312419.png" alt="image-20191227211312419" style="zoom:40%;" /></center>
+<center><img src="/assets/post_images/image-20191227211312419.png" alt="image-20191227211312419" style="zoom:40%;" /></center>
 
 
 
 ## 방법
 
-<center><img src="/assets/js/post_images/image-20191227212733898.png" alt="image-20191227212733898" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20191227212733898.png" alt="image-20191227212733898" style="zoom:50%;" /></center>
 
 AACN은 MHA과 기존 convolution 연산과 같이 진행하여서 결과를 concat하는 방식으로 구현이 되어 있음 .
 
@@ -101,7 +102,7 @@ CoordConv는 positonal channels을 activation map에 concat 하였다.
 
 하지만 이러한 encoding은 논문의 실험에서는 도움이 되지 못했음
 
-<center><img src="/assets/js/post_images/image-20200105200544795.png" alt="image-20200105200544795" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200105200544795.png" alt="image-20200105200544795" style="zoom:50%;" /></center>
 
 (Section 4.5)
 
@@ -129,7 +130,7 @@ CoordConv는 positonal channels을 activation map에 concat 하였다.
 >
 > 뒤 term : 쿼리로부터의 요소의 상대 거리를 의미
 >
-> <center><img src="/assets/js/post_images/image-20200105200928995.png" alt="image-20200105200928995" style="zoom:25%;" /></center>
+> <center><img src="/assets/post_images/image-20200105200928995.png" alt="image-20200105200928995" style="zoom:25%;" /></center>
 
 
 
@@ -188,11 +189,11 @@ convolution을 AA로 대체하여서 baseline과 비교 실험을 진행함.
 
 ### CIFAR-100 image classification
 
-<center><img src="/assets/js/post_images/image-20191228211857982.png" alt="image-20191228211857982" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20191228211857982.png" alt="image-20191228211857982" style="zoom:50%;" /></center>
 
 ### ImageNet image classification with ResNet
 
-<center><img src="/assets/js/post_images/image-20200105210145149.png" alt="image-20200105210145149" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200105210145149.png" alt="image-20200105210145149" style="zoom:50%;" /></center>
 
 ## Ablation Study
 
@@ -200,7 +201,7 @@ convolution을 AA로 대체하여서 baseline과 비교 실험을 진행함.
 
 모델의 파라미터인 k,v에 대하여 Ablation Study를 진행.
 
-<center><img src="/assets/js/post_images/image-20200105210500825.png" alt="image-20200105210500825" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200105210500825.png" alt="image-20200105210500825" style="zoom:50%;" /></center>
 
 여기서 attention conv만 사용했을 때(k=v=1.0), 파라미터는 약 25% 줄었지만 성능은 약 2.5% 줄어들었고, 비슷한 성능을ResNet-34 보다 적은 파라미터로  달성함.
 
@@ -208,7 +209,7 @@ convolution을 AA로 대체하여서 baseline과 비교 실험을 진행함.
 
 ### Importance of position encodings
 
-<center><img src="/assets/js/post_images/image-20200105211209732.png" alt="image-20200105211209732" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200105211209732.png" alt="image-20200105211209732" style="zoom:50%;" /></center>
 
 positional encoding의 중요점에 대하여, attention 채널의 비율을 높여가면서, 성능의 변화에 대하여 나타낸 그래프.
 
@@ -216,6 +217,6 @@ positional encoding을 하는 것이 성능이 더 좋았음을 보임.
 
 <br>
 
-<center><img src="/assets/js/post_images/image-20200105211355241.png" alt="image-20200105211355241" style="zoom:50%;" /></center>
+<center><img src="/assets/post_images/image-20200105211355241.png" alt="image-20200105211355241" style="zoom:50%;" /></center>
 
 positional encoding 방식에 따른, 성능 차를 측정. 기존 다른 encoding 방법보다 relative encoding이 성능이 좋음을 보임.
