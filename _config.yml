@@ -84,7 +84,10 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jinsu-l"
-    - label: "Email"
+    - label: "KakaoMail"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:j1n2u@kakao.com"
+    - label: "GMail"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:dla0830ld@gmail.com"
     - label: "Website"
@@ -256,6 +259,15 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  CS224N:
+    output: true
+    permalink: /:collection/:path/
+  CS276:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -275,3 +287,29 @@ defaults:
       sidebar:
         category : true
 
+  # collections
+  - scope:
+      path: ""
+      type: CS224N
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      breadcrumbs: false
+      sidebar:
+        nav: "CS224N"
+
+  - scope:
+      path: ""
+      type: CS276
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      breadcrumbs: false
+      sidebar:
+        nav: "CS276"

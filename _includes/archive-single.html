@@ -38,7 +38,7 @@
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>&emsp;
       {% endif %}
       {% if post.read_time %}
-        <i class="fa fa-clock" aria-hidden="true"></i>&nbsp;{% include read-time.html %}
+        <i class="fa fa-clock" aria-hidden="true"></i> Read Time : {% include read-time.html %}
       {% endif %}
     </p>
 
@@ -48,13 +48,15 @@
       </p>
     {% endif %}
 
-    <p class="page__meta">
-      <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>
-      Tags :
-      {% for tag in post.tags %}
-      &nbsp;<a href="/tags/#{{ tag | downcase }}" class="myButton">#{{ tag }}</a>
-      {% endfor %}
-    </p>
+    {% if post.tags.size > 0 %}
+      <p class="page__meta">
+        <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>
+        Tags :
+        {% for tag in post.tags %}
+        &nbsp;<a href="/tags/#{{ tag | downcase }}" class="myButton">#{{ tag }}</a>
+        {% endfor %}
+      </p>
+    {% endif %}
 
   </article>
 </div>

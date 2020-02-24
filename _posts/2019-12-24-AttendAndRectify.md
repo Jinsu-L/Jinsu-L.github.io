@@ -7,7 +7,7 @@ category: MachineLearing
 key: 20191224_AttendAndRectify
 ---
 
-Paper link : https://eccv2018.org/openaccess/content_ECCV_2018/papers/Pau_Rodriguez_Lopez_Attend_and_Rectify_ECCV_2018_paper.pdf
+Paper link : [eccv2018, Attend And Rectify](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Pau_Rodriguez_Lopez_Attend_and_Rectify_ECCV_2018_paper.pdf)
 
 작성자 github : https://github.com/prlz77/attend-and-rectify
 
@@ -23,7 +23,7 @@ CNN의 각 단계별로 Attention을 도입을 하여, 예축 class에 대한 co
 
 <br>
 
-#### 해당 논문의 장점
+### 해당 논문의 장점
 
 * 각  attention에 대한 구조가 동일하기 때문에 모듈화 가능
 * 모든 CNN 구조에 적용 가능

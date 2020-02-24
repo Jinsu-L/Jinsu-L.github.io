@@ -1,16 +1,31 @@
 # main links
 main:
    - title: "About"
-     url: https://mmistakes.github.io/minimal-mistakes/about/
+     url: /about/
    - title: "Posts"
      url: /year-archive/
    - title: "Collections"
      url: /collection-archive/
-   - title: "Sitemap"
-     url: /sitemap/
 
 sidebar-categories:
   - title: "Categories"
     children:
-      - title: test"
+      - title: test
         url : /
+
+collection-menu:
+  - title: "Lecture Study"
+    children:
+      - title: CS224N
+        url: /CS224N/
+      - title: CS276
+        url: /CS276/
+
+  - title: "CS Study"
+    children:
+      - title : 하둡
+        url: /collection-archive/
+      - title: 베이지안 프로그래밍
+        url: /collection-archive/
+
+
