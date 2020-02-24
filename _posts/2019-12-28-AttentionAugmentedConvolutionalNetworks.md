@@ -1,11 +1,7 @@
 ---
 title: Attention Augmented Convolutional Networks
-tags: MachineLearning DeepLearning XAI Attention 논문정리
-header:
-    theme: default
-category: MachineLearing
-key: 20191228_Attention_Augmented_Convolutional_Networks
-comments : true
+tags: MachineLearning DeepLearning XAI Attention
+category: PaperReview
 ---
 
 **Paper link : https://arxiv.org/pdf/1904.09925.pdf, iccv 2019**

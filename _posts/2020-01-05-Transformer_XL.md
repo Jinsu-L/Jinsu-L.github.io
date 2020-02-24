@@ -1,11 +1,7 @@
 ---
 title: Transformer XL
-tags: MachineLearning DeepLearning NLP 논문정리
-header:
-    theme: default
-category: MachineLearing
-key: 20200105_Transformer_XL
-
+tags: MachineLearning DeepLearning NLP
+category: PaperReview
 ---
 
 **Paper link : https://arxiv.org/abs/1901.02860, ACL 2019**

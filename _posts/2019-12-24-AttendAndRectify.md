@@ -1,10 +1,7 @@
 ---
 title: Attend and Rectify - a Gated Attention Mechanism for Fine-Grained Recovery
-tags: MachineLearning DeepLearning XAI Attention 논문정리
-header:
-    theme: default
-category: MachineLearing
-key: 20191224_AttendAndRectify
+tags: MachineLearning DeepLearning XAI Attention
+category: PaperReview
 ---
 
 Paper link : [eccv2018, Attend And Rectify](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Pau_Rodriguez_Lopez_Attend_and_Rectify_ECCV_2018_paper.pdf)
