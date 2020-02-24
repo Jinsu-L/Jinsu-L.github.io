@@ -1,0 +1,39 @@
+---
+layout: archive
+title: "Posts by Collection"
+permalink: /collection-archive/
+author_profile: false
+toc : true
+sidebar:
+  title: "Sample Title"
+  nav: collection-menu
+---
+
+{% capture written_label %}'None'{% endcapture %}
+
+{% for collection in site.collections %}
+  {% unless collection.output == false or collection.label == "posts" %}
+    {% capture label %}{{ collection.label }}{% endcapture %}
+    {% if label != written_label %}
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
+      {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+  {% endunless %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == "posts" %}
+    <div class="{{ include.type | default: "list" }}__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      <p class="archive__item-title" itemprop="headline">
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+      </p>
+      <p class="page__meta">
+        {% if post.date %}
+        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>
+        {% endif %}
+      </p>
+
+    </article>
+    </div>
+    {% endunless %}
+  {% endfor %}
+{% endfor %}

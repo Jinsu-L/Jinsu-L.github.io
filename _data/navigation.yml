@@ -23,9 +23,11 @@ collection-menu:
 
   - title: "CS Study"
     children:
-      - title : 하둡
+      - title : Hadoop
         url: /collection-archive/
-      - title: 베이지안 프로그래밍
+      - title: Spark
+        url: /collection-archive/
+      - title: Bayesian Programming
         url: /collection-archive/
 
 
