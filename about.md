@@ -4,6 +4,7 @@ layout: single
 header:
   theme: dark
 show_author_profile: false
+comments: true
 permalink: /about/
 ---
 ## Experience 
