@@ -29,6 +29,7 @@ logo                     : "assets/apple-touch-icon.png" # path of logo image to
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 50
+blog_date                : "2019-01-01 12:00:00"
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
