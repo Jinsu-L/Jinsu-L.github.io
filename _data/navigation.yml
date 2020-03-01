@@ -6,12 +6,16 @@ main:
      url: /year-archive/
    - title: "Collections"
      url: /collection-archive/
+   - title: "Categories"
+     url: /categories/
 
-sidebar-categories:
-  - title: "Categories"
+cs224n:
+  - title: "intro"
+    url : /CS224N/
+  - title: "Lecture 01"
     children:
-      - title: test
-        url : /
+      - title : "Introduction and Word Vectors"
+        url : /CS224N/2.CS224N2/
 
 collection-menu:
   - title: "Lecture Study"

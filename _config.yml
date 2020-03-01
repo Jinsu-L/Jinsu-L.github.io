@@ -77,7 +77,7 @@ analytics:
 author:
   name             : "Jinsu"
   avatar           : "/assets/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개발자 입니다."
+  bio              : "공부하기 위해서 만든 블로그"
   location         : "Seoul, Korea"
   email            :
   links:
