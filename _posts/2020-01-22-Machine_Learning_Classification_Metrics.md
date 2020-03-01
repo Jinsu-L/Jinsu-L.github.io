@@ -1,5 +1,5 @@
 ---
-title: Classification Matric
+title: Machine Learning Classification Matric
 tags: MachineLearning
 category: MachineLearing
 ---
