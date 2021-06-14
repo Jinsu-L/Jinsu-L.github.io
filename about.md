@@ -20,7 +20,9 @@ permalink: /about/
 ## Lacation
 * Seoul, South Korea
 
-  
+
+## Notion Blog
+[j1n2u Notion](https://www.notion.so/j1n2u/J1N2U-dc82928ac2de4ae89b61eac24423e4b6])
   
 ```
 궁금한 점이나 조언해주실 내용 있으시면, 이메일, 깃허브, 블로그 댓글 등 언제든지 연락주세요!!
